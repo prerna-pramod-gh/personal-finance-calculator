@@ -1,26 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Personal Finance Calculator</title>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Finance Calculator</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <h1>Personal Finance Calculator</h1>
-
-  <div class="container">
-    <label for="income">Income:</label>
-    <input type="number" id="income" placeholder="Enter your income" />
-
-    <label for="expenses">Expenses:</label>
-    <input type="number" id="expenses" placeholder="Enter your expenses" />
-
-    <button id="calcBtn">Calculate</button>
-
-    <div id="result"></div>
-  </div>
-
-  <script src="script.js"></script>
+    <div class="container">
+        <h1>Personal Finance Calculator</h1>
+        
+        <!-- Budget Planner -->
+        <section>
+            <h2>Budget Planner</h2>
+            <form id="budget-form">
+                <div class="form-group">
+                    <label for="income">Monthly Income ($):</label>
+                    <input type="number" id="income" step="0.01" min="0" required>
+                </div>
+                <div class="form-group">
+                    <label for="expenses">Monthly Expenses ($):</label>
+                    <input type="number" id="expenses" step="0.01" min="0" required>
+                </div>
+                <button type="submit">Calculate Budget</button>
+            </form>
+            <div id="budget-result" class="result"></div>
+        </section>
+        
+        <!-- Savings Calculator -->
+        <section>
+            <h2>Savings Calculator</h2>
+            <form id="savings-form">
+                <div class="form-group">
+                    <label for="principal">Initial Amount ($):</label>
+                    <input type="number" id="principal" step="0.01" min="0" required>
+                </div>
+                <div class="form-group">
+                    <label for="rate">Annual Interest Rate (%):</label>
+                    <input type="number" id="rate" step="0.01" min="0" required>
+                </div>
+                <div class="form-group">
+                    <label for="years">Years:</label>
+                    <input type="number" id="years" min="1" required>
+                </div>
+                <button type="submit">Calculate Savings</button>
+            </form>
+            <div id="savings-result" class="result"></div>
+        </section>
+        
+        <!-- Loan Calculator -->
+        <section>
+            <h2>Loan Calculator</h2>
+            <form id="loan-form">
+                <div class="form-group">
+                    <label for="loan-amount">Loan Amount ($):</label>
+                    <input type="number" id="loan-amount" step="0.01" min="0" required>
+                </div>
+                <div class="form-group">
+                    <label for="loan-rate">Annual Interest Rate (%):</label>
+                    <input type="number" id="loan-rate" step="0.01" min="0" required>
+                </div>
+                <div class="form-group">
+                    <label for="loan-years">Loan Term (Years):</label>
+                    <input type="number" id="loan-years" min="1" required>
+                </div>
+                <button type="submit">Calculate Payment</button>
+            </form>
+            <div id="loan-result" class="result"></div>
+        </section>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
