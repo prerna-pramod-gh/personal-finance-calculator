@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Personal Finance Calculator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Personal Finance Calculator</h1>
+
+  <div class="container">
+    <label>Income:</label>
+    <input type="number" id="income" placeholder="Enter your income" />
+
+    <label>Expenses:</label>
+    <input type="number" id="expenses" placeholder="Enter your expenses" />
+
+    <button onclick="calculateBudget()">Calculate</button>
+
+    <div id="result"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
