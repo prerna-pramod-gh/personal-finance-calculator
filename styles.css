@@ -2,7 +2,7 @@ body {
     font-family: 'Segoe UI', Arial, sans-serif;
     margin: 0;
     padding: 20px;
-    background-color: #f8f9fa; /* Solid light gray background */
+    background-color: #f8f9fa; /* Solid soft blue background */
     text-align: center; /* Center all text */
 }
 
@@ -18,36 +18,42 @@ body {
 h1 {
     color: #2c3e50;
     margin-bottom: 30px;
+    text-align: center; /* Ensure h1 is centered */
 }
 
 h2 {
     color: #34495e;
     margin-top: 20px;
+    text-align: center; /* Ensure h2 is centered */
 }
 
 section {
     margin-bottom: 30px;
+    text-align: center; /* Center section content */
 }
 
 form {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Center form elements */
+    align-items: center; /* Center form elements horizontally */
     gap: 15px;
+    text-align: center; /* Center text within form */
 }
 
 .form-group {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: center; /* Center each form group */
     width: 100%;
     max-width: 300px; /* Limit input width */
+    text-align: center; /* Center labels and inputs */
 }
 
 label {
     font-weight: bold;
     color: #495057;
     margin-bottom: 5px;
+    text-align: center; /* Center labels */
 }
 
 input {
@@ -58,6 +64,7 @@ input {
     width: 100%;
     box-sizing: border-box;
     transition: border-color 0.3s;
+    text-align: center; /* Center input text */
 }
 
 input:focus {
@@ -76,6 +83,7 @@ button {
     width: 100%;
     max-width: 300px; /* Match input width */
     transition: background-color 0.3s;
+    text-align: center; /* Center button text */
 }
 
 button:hover {
@@ -91,4 +99,5 @@ button:hover {
     max-width: 300px;
     margin-left: auto;
     margin-right: auto;
+    text-align: center; /* Center result text */
 }
