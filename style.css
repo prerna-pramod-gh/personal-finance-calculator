@@ -1,6 +1,7 @@
+/* Background and page setup */
 body {
   font-family: Arial, sans-serif;
-  background-color: #e9f0ff;
+  background-color: #eef6fd;
   margin: 0;
   padding: 0;
   display: flex;
@@ -8,12 +9,14 @@ body {
   align-items: center;
 }
 
+/* Title styling */
 h1 {
   text-align: center;
   margin-top: 40px;
-  color: #333;
+  color: #222;
 }
 
+/* Box/container */
 .container {
   background-color: white;
   padding: 30px;
@@ -27,6 +30,7 @@ h1 {
   gap: 15px;
 }
 
+/* Inputs */
 input {
   padding: 12px;
   font-size: 16px;
@@ -34,6 +38,7 @@ input {
   border: 1px solid #ccc;
 }
 
+/* Button */
 button {
   padding: 12px;
   font-size: 16px;
@@ -48,6 +53,7 @@ button:hover {
   background-color: #0056b3;
 }
 
+/* Result styling */
 #result {
   margin-top: 10px;
   font-weight: bold;
