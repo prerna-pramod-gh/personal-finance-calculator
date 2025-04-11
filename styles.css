@@ -24,7 +24,6 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center;
 }
 
 h1 {
@@ -54,8 +53,8 @@ form {
     align-items: center;
     gap: 15px;
     text-align: center;
+    max-width: 300px; /* Fixed width for forms to ensure centering */
     width: 100%;
-    max-width: 300px; /* Limit form width to ensure centering */
 }
 
 .form-group {
@@ -114,7 +113,5 @@ button:hover {
     border-radius: 6px;
     width: 100%;
     max-width: 300px;
-    margin-left: auto;
-    margin-right: auto;
     text-align: center;
 }
