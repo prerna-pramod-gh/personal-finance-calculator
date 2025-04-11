@@ -1,13 +1,16 @@
+document.getElementById("calcBtn").addEventListener("click", calculateBudget);
+
 function calculateBudget() {
   const income = parseFloat(document.getElementById('income').value);
   const expenses = parseFloat(document.getElementById('expenses').value);
 
+  const resultEl = document.getElementById('result');
+
   if (isNaN(income) || isNaN(expenses)) {
-    document.getElementById('result').innerText = "Please enter valid numbers.";
+    resultEl.innerText = "Please enter valid numbers for income and expenses.";
     return;
   }
 
   const balance = income - expenses;
-  document.getElementById('result').innerText = 
-    `Your balance is $${balance.toFixed(2)}`;
+  resultEl.innerText = `Your remaining balance is $${balance.toFixed(2)}`;
 }
