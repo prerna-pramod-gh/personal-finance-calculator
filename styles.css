@@ -7,14 +7,20 @@
 body {
     font-family: 'Segoe UI', Arial, sans-serif;
     min-height: 100vh;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url('./mountain_robot.jpg'); /* Relative path from styles.css */
+    /* Primary attempt with relative path */
+    background-image: url('./mountain_robot.jpg');
+    /* Fallback to absolute path (adjust if needed) */
+    background-image: url('/mountain_robot.jpg');
+    /* Temporary online placeholder to test immediately */
+    background-image: url('https://via.placeholder.com/1920x1080');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    /* Fallback color if image fails to load */
+    /* Fallback color if image fails */
     background-color: #add8e6;
 }
 
