@@ -11,15 +11,13 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* Explicit relative path to mountain_robot.jpg */
-    background-image: url('./mountain_robot.jpg');
-    /* Fallback to absolute path (if served from root) */
-    background-image: url('/mountain_robot.jpg');
-    /* Immediate fallback to ensure visibility */
-    background-image: url('https://via.placeholder.com/1920x1080');
+
+    /* Correct background image path */
+    background-image: url('mountain_robot.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+
     /* Fallback color */
     background-color: #add8e6;
 }
