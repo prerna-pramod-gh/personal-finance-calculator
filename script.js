@@ -37,7 +37,6 @@ document.getElementById('savings-form').addEventListener('submit', function(e) {
         return;
     }
     
-    // Compound interest (annually)
     const amount = principal * Math.pow(1 + rate, years);
     document.getElementById('savings-result').innerHTML = 
         `💰 After ${years} years, your savings will be $${amount.toFixed(2)}`;
@@ -61,7 +60,6 @@ document.getElementById('loan-form').addEventListener('submit', function(e) {
     const monthlyRate = annualRate / 12;
     const months = years * 12;
     
-    // Monthly payment formula
     const monthlyPayment = principal * (monthlyRate * Math.pow(1 + monthlyRate, months)) /
                           (Math.pow(1 + monthlyRate, months) - 1);
     
@@ -70,3 +68,12 @@ document.getElementById('loan-form').addEventListener('submit', function(e) {
     document.getElementById('loan-result').style.backgroundColor = '#fff3cd';
     document.getElementById('loan-result').style.color = '#856404';
 });
+
+// Help Functions
+function showHelp(helpId) {
+    document.getElementById(helpId).style.display = 'block';
+}
+
+function hideHelp(helpId) {
+    document.getElementById(helpId).style.display = 'none';
+}
