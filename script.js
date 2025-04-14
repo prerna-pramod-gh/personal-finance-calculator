@@ -68,12 +68,3 @@ document.getElementById('loan-form').addEventListener('submit', function(e) {
     document.getElementById('loan-result').style.backgroundColor = '#fff3cd';
     document.getElementById('loan-result').style.color = '#856404';
 });
-
-// Help Functions
-function showHelp(helpId) {
-    document.getElementById(helpId).style.display = 'block';
-}
-
-function hideHelp(helpId) {
-    document.getElementById(helpId).style.display = 'none';
-}
