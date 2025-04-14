@@ -25,6 +25,11 @@
                 <button type="submit">Calculate Budget</button>
             </form>
             <div id="budget-result" class="result"></div>
+            <button class="help-btn" onclick="showHelp('budget-help')">Help</button>
+            <div id="budget-help" class="help-text" style="display: none;">
+                <p><strong>Help:</strong> Enter your monthly income and expenses to calculate your budget surplus or deficit.</p>
+                <button onclick="hideHelp('budget-help')">Close</button>
+            </div>
         </section>
         
         <!-- Savings Calculator -->
@@ -46,6 +51,11 @@
                 <button type="submit">Calculate Savings</button>
             </form>
             <div id="savings-result" class="result"></div>
+            <button class="help-btn" onclick="showHelp('savings-help')">Help</button>
+            <div id="savings-help" class="help-text" style="display: none;">
+                <p><strong>Help:</strong> Enter your initial savings, interest rate, and time period to project future savings.</p>
+                <button onclick="hideHelp('savings-help')">Close</button>
+            </div>
         </section>
         
         <!-- Loan Calculator -->
@@ -67,6 +77,11 @@
                 <button type="submit">Calculate Payment</button>
             </form>
             <div id="loan-result" class="result"></div>
+            <button class="help-btn" onclick="showHelp('loan-help')">Help</button>
+            <div id="loan-help" class="help-text" style="display: none;">
+                <p><strong>Help:</strong> Enter your loan amount, interest rate, and term to calculate your monthly payment.</p>
+                <button onclick="hideHelp('loan-help')">Close</button>
+            </div>
         </section>
     </div>
     <script src="script.js"></script>
